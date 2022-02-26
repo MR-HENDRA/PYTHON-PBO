@@ -1,5 +1,6 @@
 class Hero: # template
     def __init__(self, inputName, inputHealth, inputPower, inputArmor):
+        # instance variable
         self.name = inputName
         self.health = inputHealth
         self.power = inputPower
