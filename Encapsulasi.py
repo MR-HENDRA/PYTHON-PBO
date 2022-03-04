@@ -1,3 +1,6 @@
+from traceback import print_tb
+
+
 class Hero:
     
     def __init__(self,name,health,attackPower):
@@ -12,15 +15,18 @@ class Hero:
     def getHealth(self):
         return self.__health
     
+    def attackPower(self):
+        return self.__attackPower
+    
     # setter
     def diserang(self,serangPower):
         self.__health -= serangPower
         
-    def setAttPower(self,nilaibaru):
-        self.__attackPower = nilaibaru
+    def power(self,nilaibaru):
+        self.__attackPower += nilaibaru
         
 # awal dari game
-Endangk = Hero("Endangk",100,1)
+Endangk = Hero("Endangk",100,50)
 
 # game berjalan
 
@@ -28,3 +34,6 @@ print(Endangk.getName())
 print(Endangk.getHealth())
 Endangk.diserang(10)
 print(Endangk.getHealth())
+print(Endangk.attackPower())
+Endangk.power(25)
+print(Endangk.attackPower())
