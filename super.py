@@ -20,4 +20,10 @@ class Hero_strenght(Hero):
         
 hendra = Hero_intelligent('Hendra')
 usman = Hero_strenght('Usman')
-        
+
+
+
+
+
+
+
